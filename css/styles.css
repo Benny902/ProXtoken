@@ -92,4 +92,8 @@ table {
     height: 25rem;
     border: 2px solid rgba(255, 0, 0, 0);
   }
+  table.table3 { /*empty box*/
+    height: 10rem;
+    border: 2px solid rgba(255, 0, 0, 0);
+  }
 
