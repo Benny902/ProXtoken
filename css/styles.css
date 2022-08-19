@@ -1,0 +1,90 @@
+
+
+body {
+  background-image: url(../media/wp5.gif);
+  color: white;
+  font-size: 14px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.navbar {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: rgb(121, 0, 0);
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 100px;
+  height: 1500px; /* Used in this example to enable scrolling */
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.button {
+  width: 150px;
+  height: 100px;
+  border:none;
+  border:solid 8px white;
+  border-radius: 10px;
+  background: rgba(255, 255, 255,0);
+  font-size: 33px;
+  color:white
+}
+
+.button:hover {
+  background:rgb(71, 71, 71);
+  color:white; 
+}
+
+.logo-image{
+    width: 55px;
+    height: 55px;
+    border-radius: 80%;
+    overflow: hidden;
+    margin-top: -1px;
+}
+
+
+h1{text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+h2{text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+p{text-align: left;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+table {
+  width: 31%;
+  border: 2px solid red;
+  margin: 2px;
+  }
+  
+  table tr td {
+    text-align: center;
+  }
+  table.table1 {
+    height: 15rem;
+  }
+  table.table2 {
+    height: 25rem;
+    border: 2px solid rgba(255, 0, 0, 0);
+  }
+
