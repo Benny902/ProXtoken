@@ -5,6 +5,13 @@
   width: 1000px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
 body {
   background-image: url(../media/wp4.gif);
   background-attachment: fixed;
@@ -17,7 +24,7 @@ body {
   background-color: rgb(0, 0, 0);
   position: fixed;
   top: 0;
-  width: 90%;
+  width: 100%;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
@@ -26,7 +33,7 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 11px 16px;
+  padding: 1px 11px;
   text-decoration: none;
   font-size: 25px;
 }
@@ -44,19 +51,26 @@ body {
 }
 
 .button {
-  width: 150px;
+  width: 300px;
   height: 100px;
   border:none;
   border:solid 8px white;
   border-radius: 10px;
   background: rgba(255, 255, 255,0);
   font-size: 33px;
-  color:white
+  padding: 20px;
+  color:white;
 }
 
 .button:hover {
   background:rgb(71, 71, 71);
   color:white; 
+}
+
+.text-center {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-image{
@@ -65,10 +79,15 @@ body {
     border-radius: 80%;
     overflow: hidden;
     margin-top: -1px;
+    
 }
+
+
+
 
 .circular--square { 
   border-radius: 40%; 
+ 
 }
 
 br {
@@ -79,7 +98,8 @@ br {
 
 h1{
  font-size: 38px; text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
-h2{text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+h2{
+  text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 h5{font-size: 16px; text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 p{text-align: left;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 
@@ -125,8 +145,8 @@ table {
     padding: 1px;
     border: 1px solid rgba(255, 0, 0, 0);
   }
+  
   table.table5 { /*for tokenomics*/
-    
     width: 35px;
     border: 1px solid rgba(255, 0, 0, 0);
     padding: 0px;
@@ -143,6 +163,11 @@ table {
     padding: 5px;
     text-align: center;
     padding: 22px;
+    align-items: center;
+  }
+  .column tr td {
+    text-align: center;
+    align-items: center;
   }
   
   /* Clearfix (clear floats) */
@@ -152,5 +177,10 @@ table {
     display: table;
     text-align: center;
     padding: 22px;
+    align-items: center;
   }
 
+  .row tr td {
+    text-align: center;
+    align-items: center;
+  }
