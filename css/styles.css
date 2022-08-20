@@ -92,10 +92,9 @@ br {
   margin-top: 5px; /* change this to whatever height you want it */
 }
 
-h1{
- font-size: 38px; text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
-h2{
-  text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+h1{font-size: 38px; text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+h2{text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+h3{text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 h5{font-size: 16px; text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 p{text-align: left;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 
@@ -125,9 +124,9 @@ table {
     height: 15rem;
   }
   table.table2 { /*for tokenomics*/
-    width: 31%;
+    width: 400px;
     border: 2px solid rgba(255, 0, 0, 0);
-    padding: 0px;
+    padding: 10px;
   }
   table.table3 { /*empty box for top*/
     height: 2rem;
@@ -155,17 +154,13 @@ table {
   
   .column {
     float: left;
-    width: 25%;
+    width: 45%;
     padding: 5px;
-    text-align: center;
+    text-align: match-parent;
     padding: 22px;
-    align-items: center;
+   
   }
-  .column tr td {
-    text-align: center;
-    align-items: center;
-  }
-  
+
   /* Clearfix (clear floats) */
   .row::after {
     content: "";
@@ -173,10 +168,6 @@ table {
     display: table;
     text-align: center;
     padding: 22px;
-    align-items: center;
+    
   }
 
-  .row tr td {
-    text-align: center;
-    align-items: center;
-  }
