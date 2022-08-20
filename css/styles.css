@@ -111,6 +111,7 @@ div {
 }
 
 table {
+  max-width: 300px;
   width: 31%;
   border: 2px solid red;
   margin: 2px;
@@ -126,7 +127,8 @@ table {
   table.table2 { /*for tokenomics*/
     width: 400px;
     border: 2px solid rgba(255, 0, 0, 0);
-    padding: 10px;
+    padding: 1px;
+    padding-left: 15px;
   }
   table.table3 { /*empty box for top*/
     height: 2rem;
@@ -154,7 +156,7 @@ table {
   
   .column {
     float: left;
-    width: 45%;
+    width: 55%;
     padding: 5px;
     text-align: match-parent;
     padding: 22px;
