@@ -9,7 +9,7 @@
 body {
   background-image: url(../media/wp4.gif);
   background-attachment: fixed;
-  color: white;
+  color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
@@ -46,7 +46,7 @@ body {
 }
 
 .button {
-  width: 300px;
+  width: 250px;
   height: 80px;
   border:none;
   border:solid 2px white;
@@ -146,7 +146,7 @@ table {
 
   table.table1 { /*for home intros*/
     border-radius:20%;
-    border: 2px solid red;
+    border: 2px solid rgba(255, 0, 0, 0.267);
     height: 15rem;
     padding: 22px;
   }
@@ -186,7 +186,7 @@ table {
     border: 1px solid rgba(255, 0, 0, 0);
   }
   
-  table.table5 { /*for tokenomics*/
+  table.table5 { /*for chapters*/
     width: 35px;
     border: 1px solid rgba(255, 0, 0, 0);
     padding: 0px;
