@@ -11,7 +11,8 @@ body {
   background-attachment: fixed;
   color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 12px;
 }
 .navbar {
   overflow: hidden;
@@ -19,7 +20,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navbar a {
@@ -42,7 +43,7 @@ body {
   padding: 16px;
   margin-top: 100px;
   height: 1500px; /* Used in this example to enable scrolling */
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .button {
