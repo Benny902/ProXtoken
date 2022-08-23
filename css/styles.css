@@ -47,7 +47,7 @@ body {
 }
 
 .button {
-  width: 250px;
+  width: 280px;
   height: 80px;
   border:none;
   border:solid 2px white;
@@ -97,9 +97,6 @@ body {
     
 }
 
-iframe{
-  
- }
 
 .circular--square { 
   border-radius: 40%; 
