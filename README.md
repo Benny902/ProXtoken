@@ -1,14 +1,14 @@
 
-# ProXbsc
+# ProXtoken
 
 
-![alt text](https://github.com/Benny902/ProXbsc/blob/main/media/projectXgifcut.gif?raw=true)
+![alt text](https://github.com/Benny902/ProXtoken/blob/main/media/projectXgifcut.gif?raw=true)
 
 
 Project X - Crypto Token
-![alt text](https://github.com/Benny902/ProXbsc/blob/main/media/prox55.png?raw=true)
+![alt text](https://github.com/Benny902/ProXtoken/blob/main/media/prox55.png?raw=true)
 
 
-Github pages live: https://benny902.github.io/ProXbsc/
+Github pages live: https://benny902.github.io/ProXtoken/
 
 Soon to be deployed on our domain
