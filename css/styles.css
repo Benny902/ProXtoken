@@ -190,10 +190,13 @@ table {
   }
   
   table.table5 { /*for chapters*/
-    width: 35px;
+    
     border: 1px solid rgba(255, 0, 0, 0);
-    padding: 0px;
+    padding: 1px;
   }
+
+  
+
 
   table.table6 { /*for team wallets*/
     margin: 2px;
