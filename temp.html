@@ -7,9 +7,110 @@
 <title>Project X</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
+<style>
+  body {
+  font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgba(61, 0, 0, 0.904);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1px 8px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  background: rgba(255, 0, 0, 0);
+  color: rgb(255, 0, 0);
+  border-radius: 100%;
+}
+
+.sidenav {
+  background-color: rgba(61, 0, 0, 0.904);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 70%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  color: #f2f2f2;
+  padding: 2px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background: rgba(235, 228, 228, 0);
+  color: rgb(255, 0, 0);
+  border-radius: 100%;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+@media screen and (min-width:481px) {
+    .sidenav {display:none}
+}
+@media screen and (max-width:480px) {
+    .navbar {display:none}
+}
+  </style>
+
 </head>
 
 <body  style="padding-left: 42px;">
+
+  <div id="mySidenav" class="sidenav">
+    <a href="#HOME" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="navbar-brand" href="index.html#"><img src="media/prox500new.png" alt="icon" style="max-width: 50px; max-height: 50x"></img></a></a>
+          <a href="#"><b>HOME</b></a>
+          <a href="index.html#TOKENOMICS" onclick="closeNav()"><b>TOKENOMICS</b></a>
+          <a href="index.html#TEAM" onclick="closeNav()"><b>TEAM</b></a>
+          <a href="index.html#CHAPTERS" onclick="closeNav()"><b>CHAPTERS</b></a>
+          <a href="pages/xclub.html" onclick="closeNav()"><b>X-CLUB</b></a>
+          <a href="pages/dashboard.html" onclick="closeNav()"><b>DASHBOARD</b></a>
+          <a href="pages/whitepaper.html" onclick="closeNav()"><b>WHITEPAPER</b></a>
+  </div>
+  
+  <span style="font-size:50px;position:relative;cursor:pointer;position:fixed" onclick="openNav()">&#9776;</span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
   <div>   
 <div class="navbar">
         <a class="navbar-brand" href="index.html#"><img src="media/prox500new.png" alt="icon" style="max-width: 50px; max-height: 50x"></img></a></a>
@@ -37,6 +138,10 @@
 <div><a class="navbar-brand" href="index.html#"><img src="media/projectXgifcut.gif" alt="icon" style="max-width: 300px; max-height: 300x"></img></a></a></div>
 
   
+
+
+
+
   <div><table class="table3"><tr></td></tr></table> </div>
 
   

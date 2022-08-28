@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(../media/wp4.gif);
+  background-image: url(../media/wp3.gif);
   background-attachment: fixed;
   color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
@@ -37,6 +37,58 @@ body {
   background: rgba(255, 0, 0, 0);
   color: rgb(255, 0, 0);
   border-radius: 100%;
+}
+
+.sidenav {
+  background-color: rgba(61, 0, 0, 0.904);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 70%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  color: #f2f2f2;
+  padding: 2px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background: rgba(235, 228, 228, 0);
+  color: rgb(255, 0, 0);
+  border-radius: 100%;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenavbutton{
+  font-size:50px;
+  position:relative;
+  cursor:pointer;
+  position:fixed
+}
+
+@media screen and (min-width:481px) {
+    .sidenav {display:none}
+    .sidenavbutton {display:none}
+}
+@media screen and (max-width:480px) {
+    .navbar {display:none}
 }
 
 .main {
