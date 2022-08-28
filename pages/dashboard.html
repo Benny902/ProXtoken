@@ -11,6 +11,33 @@
 
 <body>
 
+
+  <div id="mySidenav" class="sidenav">
+    <a href="#HOME" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="navbar-brand" href="../index.html#" onclick="closeNav()"><img src="../media/prox500new.png" alt="icon" style="max-width: 50px; max-height: 50x"></img></a></a>
+    <a href="../index.html#" onclick="closeNav()"><b>HOME</b></a>
+    <a href="../index.html#TOKENOMICS" onclick="closeNav()"><b>TOKENOMICS</b></a>
+    <a href="../index.html#TEAM" onclick="closeNav()"><b>TEAM</b></a>
+    <a href="../index.html#CHAPTERS" onclick="closeNav()"><b>CHAPTERS</b></a>
+    <a href="../pages/xclub.html" onclick="closeNav()"><b>X-CLUB</b></a>
+    <a href="../pages/dashboard.html" onclick="closeNav()"><b>DASHBOARD</b></a>
+    <a href="../pages/whitepaper.html" onclick="closeNav()"><b>WHITEPAPER</b></a>
+          <a href="pages/whitepaper.html" onclick="closeNav()"><b>WHITEPAPER</b></a>
+  </div>
+  
+  <p>&nbsp;</p>
+<span class="sidenavbutton" onclick="openNav()">&#9776;</span>
+
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
        <div class="navbar">
         <a class="navbar-brand" href="../index.html#"><img src="../media/prox500new.png" alt="icon" style="max-width: 50px; max-height: 50x"></img></a></a>
         <a href="../index.html#"><b>HOME</b></a>
@@ -30,7 +57,7 @@
 
       <div><table class="table3"><tr></td></tr></table> </div>
 <!-- <span style="color:red;">THIS</span> -->
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p>
     <p style="text-align:center;">
         <iframe style="border-radius:10%;" width="500" height="452" align="middle"
         src="https://benny902.github.io/proxdapp/"  allowFullScreen>
