@@ -76,11 +76,14 @@ body {
 }
 
 .sidenavbutton{
-  font-size:55px;
-  color: rgb(253, 110, 110);
+  font-size:33px;
+  font-stretch:1%;
+  color: rgba(255, 0, 0, 0.753);
   position:relative;
   cursor:pointer;
-  position:fixed
+  position:fixed;
+  top: 0px;
+  left: 0px;
 }
 
 @media screen and (min-width:481px) {
