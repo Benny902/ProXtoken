@@ -7,12 +7,16 @@
 }
 
 body {
-  background-image: url(../media/wp3.gif);
+  background-image: url(../media/wp4.gif);
   background-attachment: fixed;
   color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-left: 1px;
+}
+
+.paragraph {
+  padding: 10px;
 }
 
 .navbar {
@@ -270,6 +274,7 @@ table {
 
   table tr td {
     text-align: left;
+    
   }
 
   tr:nth-child(even) {
@@ -277,6 +282,9 @@ table {
   }
 
   table.table1 { /*for home intros*/
+    max-width: 300px;
+    width: 31%;
+    margin: 2px;
     border-radius:20%;
     border: 2px solid rgba(255, 0, 0, 0.267);
     height: 15rem;
