@@ -39,24 +39,20 @@ $(document).ready(function(){
 </script>
 </head>
 
-<button onclick="topFunction()" id="myBtn2" title="Go to top" style="font-size: 55px;">◯</button>
-<button onclick="topFunction()" id="myBtn" title="Go to top" style="font-size: 35px;"><b>︽</b></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="font-size: 66px;transform:rotateZ(270deg)"><b>›</b></button>
 
 <script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
-var mybutton2 = document.getElementById("myBtn2");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 155 || document.documentElement.scrollTop > 155) {
+  if (document.body.scrollTop > 55 || document.documentElement.scrollTop > 55) {
     mybutton.style.display = "block";
-    mybutton2.style.display = "block";
   } else {
     mybutton.style.display = "none";
-    mybutton2.style.display = "none";
   }
 }
 
@@ -69,7 +65,7 @@ function topFunction() {
 
 <body  style="padding-left: 42px;">
 
-  <span class="sidenavbutton" onclick="openNav()">㊂</span>
+  <span class="sidenavbutton" onclick="openNav()">☰</span>
 
   <div id="mySidenav" class="sidenav">
     <a  class="closebtn" onclick="closeNav()">&times;</a>
@@ -135,7 +131,7 @@ function topFunction() {
 <!-- <span style="color:red;">THIS</span> -->
 
 
-<div class="paragraph" style="padding:100px"></div>
+<div class="paragraph" style="padding:50px"></div>
 
 
 <div><a class="navbar-brand" href="#HOME"><img src="media/projectXgifcut.gif" alt="icon" style="max-width: 300px; max-height: 300x"></img></a></a></div>
