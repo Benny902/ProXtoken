@@ -39,6 +39,34 @@ $(document).ready(function(){
 </script>
 </head>
 
+<button onclick="topFunction()" id="myBtn2" title="Go to top" style="font-size: 55px;">◯</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="font-size: 35px;"><b>︽</b></button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+var mybutton2 = document.getElementById("myBtn2");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 155 || document.documentElement.scrollTop > 155) {
+    mybutton.style.display = "block";
+    mybutton2.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+    mybutton2.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 <body  style="padding-left: 42px;">
 
   <span class="sidenavbutton" onclick="openNav()">㊂</span>
