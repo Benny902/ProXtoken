@@ -158,14 +158,14 @@ body {
 }
 
 .sidenavbutton{
-  font-size:65px;
+  font-size:77px;
   font-stretch:1%;
-  color: rgba(255, 0, 98, 0.39);
+  color: rgba(255, 0, 0, 0.651);
   position:relative;
   cursor:pointer;
   /*position:fixed;*/
   top: 22px;
-  left: 55px;
+  left: 1px;
 }
 
 @media screen and (min-width:481px) {
@@ -229,22 +229,7 @@ body {
   border: none;
   outline: none;
   background-color: rgba(255, 0, 0, 0);
-  color: rgba(255, 255, 255, 0.411);
-  cursor: pointer;
-  padding: 0px;
-  border-radius: 0px;
-}
-#myBtn2 { /*circle*/
-  display: none;
-  position: fixed;
-  bottom: 3px;
-  right: 18px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: rgba(255, 0, 0, 0);
-  color: rgb(255, 0, 0, 0.311);
+  color: rgba(255, 0, 0, 0.479);
   cursor: pointer;
   padding: 0px;
   border-radius: 0px;
