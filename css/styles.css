@@ -158,14 +158,14 @@ body {
 }
 
 .sidenavbutton{
-  font-size:45px;
+  font-size:65px;
   font-stretch:1%;
   color: rgba(255, 0, 98, 0.39);
   position:relative;
   cursor:pointer;
-  position:fixed;
-  top: 0px;
-  left: 0px;
+  /*position:fixed;*/
+  top: 22px;
+  left: 55px;
 }
 
 @media screen and (min-width:481px) {
@@ -219,7 +219,7 @@ body {
   color:white; 
 }
 
-#myBtn {
+#myBtn { /*arrow*/
   display: none;
   position: fixed;
   bottom: 20px;
@@ -229,12 +229,12 @@ body {
   border: none;
   outline: none;
   background-color: rgba(255, 0, 0, 0);
-  color: white;
+  color: rgba(255, 255, 255, 0.411);
   cursor: pointer;
   padding: 0px;
   border-radius: 0px;
 }
-#myBtn2 {
+#myBtn2 { /*circle*/
   display: none;
   position: fixed;
   bottom: 3px;
@@ -244,14 +244,14 @@ body {
   border: none;
   outline: none;
   background-color: rgba(255, 0, 0, 0);
-  color: white;
+  color: rgb(255, 0, 0, 0.311);
   cursor: pointer;
   padding: 0px;
   border-radius: 0px;
 }
 
 #myBtn:hover {
-  color: rgb(255, 0, 0, 0.6);
+  color: rgb(255, 0, 0);
 }
 
 .text-center {
