@@ -496,7 +496,7 @@ table {
   perspective: 1000px;
   position:relative;
   padding-top: 80px;
-  transform-style: preserve-3d;
+  transform-style: flat;
 }
 .slider-content{
   width: 100%;
@@ -514,7 +514,7 @@ table {
   width:150px;
   height:150px;
   /*border:1px solid #555;*/
-  overflow:hidden;
+  overflow:visible;
   position:absolute;
 }
 .slider-content img{
@@ -526,7 +526,7 @@ table {
 }
 
 .slider-content img:hover{
-  transform: scale(1.1); 
+  transform: scale(2); 
   transition: all 300ms; 
 } 
 .shadow{ 
