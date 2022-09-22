@@ -101,25 +101,46 @@
 
     <div class="paragraph" style="padding:10px"></div>
 
-    <div>
-      <p style="font-size:22px;text-align: center;color:rgba(255, 0, 0, 0.603);">
-        Project X - First NFT collection called: "Welcome To The Jungle".<br>
-      3,000 NFT's of unique animals in the Horror genre, with the following Utilities:</p>
-    </div>
-    <div>
-      <p style="font-size:18px;text-align: center;color:rgba(255, 255, 255, 0.904);">
-      • 5 rare NFT's which their holders will be rewarded with 1,000$ worth of ProX<br>
-      • ProX rewards 25% of minted NFTs, which is manually claimable on the dApp.<br>
-      • X-Club access for buying and holding 10 or more NFTs.<br>
-      • Hold 30 NFTs to be entered into the raffle to win 5,000$ worth of ProX<br>
-      </p>
-    </div>
+    <h2 class="blink_me" style="font-size:30px">NFT Minting will be live on: 22/09/22 - 7 PM UTC<br></h2> 
 
-      <div class="paragraph" style="padding:50px"></div>
+    <h2 class="blink_me" style="font-size:50px" id="demo"></h2>
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date(Date.UTC(2022,09,22,19,00,00))
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = 0 + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    
+    <h2 class="blink_me" style="font-size:30px">Minting dapp will be here on this page below<br></h2> 
 
-<div>
 
-  <section class="slideshow">
+
+    <div class="paragraph" style="padding:10px"></div>
+ 
     <div class="content">
        <div class="slider-content">
           <figure class="shadow"><img src="../NFTgallery/1.jpg"></figure>
@@ -133,48 +154,29 @@
           <figure class="shadow"><img src="../NFTgallery/9.jpg"></figure>
        </div>
     </div>
- </section>
-
-</div>
 
 
 
 
-<h2 class="blink_me" style="font-size:30px">NFT Minting will be live on &nbsp; 22/09/22 &nbsp; 7 PM UTC<br></h2> 
 
-<h2 class="blink_me" style="font-size:50px" id="demo"></h2>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date(Date.UTC(2022,09,22,19,00,00))
+    <div class="paragraph" style="padding:70px"></div>
 
-// Update the count down every 1 second
-var x = setInterval(function() {
 
-  // Get today's date and time
-  var now = new Date().getTime();
+    <div>
+      <h1 style="font-size:16px;text-align: center;color:rgba(255, 0, 0, 0.603);">
+        Project X - First NFT collection called: "Welcome To The Jungle".<br>
+      3,000 NFT's of unique animals in the Horror genre, with the following Utilities:</h1>
+    </div>
+    <div>
+      <h1 style="font-size:14px;text-align: center;color:rgba(255, 255, 255, 0.904);">
+      • 5 rare NFT's which their holders will be rewarded with 1,000$ worth of ProX<br>
+      • ProX rewards 25% of minted NFTs, which is manually claimable on the dApp.<br>
+      • X-Club access for buying and holding 10 or more NFTs.<br>
+      • Hold 30 NFTs to be entered into the raffle to win 5,000$ worth of ProX<br>
+      </h1>
+    </div>
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = 0 + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
-<h2 class="blink_me" style="font-size:30px">Minting dapp will be here on this page below<br></h2> 
     
 
 
@@ -200,12 +202,13 @@ var x = setInterval(function() {
         position: relative;
         zoom: 126%;
         }
- 
 </style>
+
+<!--
         <iframe class="dash" scrolling="no" 
         src="https://"  allowFullScreen>
         </iframe>
-    
+    -->
 
     <div><table class="table3"><tr></td></tr></table> </div>
     <div><table class="table3"><tr></td></tr></table> </div>
