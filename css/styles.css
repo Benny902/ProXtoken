@@ -513,7 +513,7 @@ table {
 .slider-content figure{
   width:150px;
   height:150px;
-  border:1px solid #555;
+  /*border:1px solid #555;*/
   overflow:hidden;
   position:absolute;
 }
@@ -522,10 +522,11 @@ table {
   transition: all 300ms;
   width: 100%;
   height: 100%;
+  border-radius: 7px;
 }
 
 .slider-content img:hover{
-  transform: scale(1.2); 
+  transform: scale(1.1); 
   transition: all 300ms; 
 } 
 .shadow{ 
