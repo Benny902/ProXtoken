@@ -214,7 +214,7 @@ body {
   background-color: rgba(61, 0, 0, 0.904);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   height: 90%;
-  width: 200px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
