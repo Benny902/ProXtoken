@@ -109,18 +109,6 @@
     <div><table class="table3"><tr></td></tr></table> </div>
     <div><table class="table3"><tr></td></tr></table> </div>
 
-
-<script>
-    function Calculate()
-{
-        num1 = document.getElementById("firstNumber").value;
-        num2 = document.getElementById("secondNumber").value;
-        let result = Math.trunc( (num1 * num2 *0.07)/100000000*1.7 );
-        document.getElementById("result").innerHTML = result;
-}
-
-</script>
-
 <style>
     body, html {
     
@@ -192,6 +180,17 @@ body {
 }
 </style>
 
+
+<script>
+    function Calculate()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        let result = Math.trunc( (num1 * num2 *0.07)/100000000*0.17 );
+        document.getElementById("result").innerHTML = result;
+}
+</script>
+
     <div class="dashboard" style="position:relative;">
         
             <form>
@@ -200,7 +199,7 @@ body {
             <input type="button" onClick="Calculate()" Value="Calculate" />
             
             <div class="paragraph" style="padding:10px"></div>
-            <div>Based on your tokens, and the volume, you will get : <span id = "result"></span>$<br></div>
+            <div>Based on your tokens, and the volume, you will get :<span id = "result"></span>dollars worth of Pegged ETH<br></div>
         </form>
             </p>
     </div>
