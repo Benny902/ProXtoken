@@ -190,17 +190,27 @@ body {
 }
 </script>
 
-    <div class="dashboard" style="position:relative;">
-        
-            <form>
+    <div class="dashboard" style="font-size:14px;color: rgba(255, 255, 255, 0.904);" style="position:relative;">
+        <div style="font-size:28px;color: red;">Rewards Calculator</div>
+        <div class="paragraph" style="padding:10px"></div>
+            <div><form>
             How many tokens you hold? : <input type="text" id="firstNumber" /><br>
             What Volume is Expected? : <input type="text" id="secondNumber" /><br>
-            <input type="button" onClick="Calculate()" Value="Calculate" />
+            <input style="  width: 100%;
+            margin: 5px 0px 0px 0px;
+            padding: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 17px;
+            font-weight: bold;
+            margin: 20px 0px;
+            border-radius: 20px;" type="button" onClick="Calculate()" Value="Calculate" />
             
-            <div class="paragraph" style="padding:10px"></div>
-            <div>Based on your tokens, and the volume, </div> <div>you will get :&nbsp;<span id = "result"></span>&nbsp;$ worth of Pegged ETH<br></div>
-        </form>
-            </p>
+            <div style="font-size:18px;color: rgba(255, 255, 255, 0.904);">Based on your tokens, and the volume, </div> <div style="font-size:18px;color: rgba(255, 255, 255, 0.904);">you will get :&nbsp;<span id = "result"></span>&nbsp;$ &nbsp;worth of Pegged ETH<br></div>
+            <div class="paragraph" style="padding:20px"></div>
+        
+        </form></div>
+            
     </div>
 
     <div><table class="table3"><tr></td></tr></table> </div>
