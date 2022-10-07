@@ -124,6 +124,9 @@ body {
 }
 
 .dashboard {
+  max-width: 410px;
+    width: calc(100% - 20px);
+    padding: 10px;
   display:table;/* shrinks to fit conntent */
   margin:auto;
 
@@ -131,8 +134,7 @@ body {
   color: rgb(255, 255, 255);
 
   font-weight: bold;
-  width: 400px;
-  padding: 26px 20px;
+
   
   background-position: center;
   border-radius: 20px;
@@ -178,31 +180,6 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 620px) {
-  .dashboard {
-    max-width: 410px;
-    width: calc(100% - 20px);
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 5480px) {
-  .dashboard div {
-    max-width: 410px;
-    width: 100%;
-    display: block;
-    text-align: center;
-    font-size: 14px;
-  }
-
-  .dashboard .paragraph {
-    padding: 10px;
-  }
-
-  .dashboard button {
-    margin: 0px;
-  }
-}
 
 </style>
 
@@ -254,8 +231,8 @@ run();
         <div style="font-size:28px;color: red;">Rewards Calculator</div>
         <div class="paragraph" style="padding:10px"></div>
             <div><form>
-            How many tokens you hold? : <input type="text" id="tokensNumber" /><br>
-            Daily AVG volume Expected? : <input type="text" id="volumeNumber" /><br>
+              <div>How many tokens you hold? : <input type="text" id="tokensNumber" /><br></div>
+                <div>Daily AVG volume Expected? : <input type="text" id="volumeNumber" /><br></div>
             <input style="  width: 100%;
             margin: 5px 0px 0px 0px;
             padding: 5px;
