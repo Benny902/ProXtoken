@@ -138,7 +138,7 @@ body {
   border-radius: 20px;
   border-style: solid;
   border-width: 0.2px;
-  border-color:#ff000088
+  border-color:#ff000088;
 }
 
 
@@ -177,16 +177,49 @@ body {
 .dashboard div {
   display: flex;
 }
+
+@media screen and (max-width: 620px) {
+  .dashboard {
+    max-width: 400px;
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 5480px) {
+  .dashboard div {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .dashboard .paragraph {
+    padding: 10px;
+  }
+
+  .dashboard button {
+    margin: 0px;
+  }
+}
+
 </style>
 
 
 <script>
     function Calculate()
 {
-        num1 = document.getElementById("firstNumber").value;
-        num2 = document.getElementById("secondNumber").value;
-        let result = Math.trunc( (num1 * num2 *0.07)/100000000*0.17 );
-        document.getElementById("result").innerHTML = result;
+        tokens = document.getElementById("tokensNumber").value;
+        tokens = tokens.replaceAll(',', '');
+        tokens = tokens.replaceAll(' ', '');
+        volume = document.getElementById("volumeNumber").value;
+        volume = volume.replaceAll(',', '');
+        volume = volume.replaceAll(' ', '');
+        let ethTax = 0.07; // 7% eth tax
+        let DividendTotalSupply = 550000000; //550m, this is the current number, but needs to be changed to the real LIVE value via BSCSCAN
+        let result = Math.trunc( ((volume * ethTax) * (tokens/DividendTotalSupply)) );
+        let result2 = result*30;
+        document.getElementById("result").innerHTML = result; // perDay 
+        document.getElementById("result2").innerHTML = result2; // perMonth
 }
 </script>
 
@@ -194,8 +227,8 @@ body {
         <div style="font-size:28px;color: red;">Rewards Calculator</div>
         <div class="paragraph" style="padding:10px"></div>
             <div><form>
-            How many tokens you hold? : <input type="text" id="firstNumber" /><br>
-            What Volume is Expected? : <input type="text" id="secondNumber" /><br>
+            How many tokens you hold? : <input type="text" id="tokensNumber" /><br>
+            Daily AVG volume Expected? : <input type="text" id="volumeNumber" /><br>
             <input style="  width: 100%;
             margin: 5px 0px 0px 0px;
             padding: 5px;
@@ -206,13 +239,21 @@ body {
             margin: 20px 0px;
             border-radius: 20px;" type="button" onClick="Calculate()" Value="Calculate" />
             
-            <div style="font-size:18px;color: rgba(255, 255, 255, 0.904);">Based on your tokens, and the volume, </div> <div style="font-size:18px;color: rgba(255, 255, 255, 0.904);">you will get :&nbsp;<span id = "result"></span>&nbsp;$ &nbsp;worth of Pegged ETH<br></div>
+            <div style="font-size:18px;color: rgba(255, 255, 255, 0.904);">Based on your tokens, and the volume, the worth of Pegged ETH you will get is:&nbsp;</div> 
+            <div style="font-size:18px;color: rgba(255, 255, 255, 0.904);"><span id = "result"></span>&nbsp;$ per day&nbsp;<br></div>
+            <div style="font-size:18px;color: rgba(255, 255, 255, 0.904);"><span id = "result2"></span>&nbsp;$ per month&nbsp;<br></div>
             <div class="paragraph" style="padding:20px"></div>
-        
-        </form></div>
-            
+        </form></div> 
     </div>
-
+    <div class="paragraph" style="padding:20px"></div>
+    <div><p style="font-size:16px;">Explanation of the math:<br>
+            for example, 10m tokens and 100k daily AVG volume:<br>
+            Eth Tax is 7%, DividendTotalSupply = <a style="color:rgb(255, 255, 255);" href="https://bscscan.com/token/0xbee9f9a6e4754b501ad3a702a36cde0e501f767f">Link</a> .<br>
+            DividendTotalSupply changes based on holders tokens.<br>
+            so lets say for this example, DividendTotalSupply is 550m.<br>
+            so we do = ((volume * eth tax) * (tokens/DividendTotalSupply)):<br>
+            the result = ((100000 * 0.07) * (10m/550m)) => 127$ per day.
+      </p></div>
     <div><table class="table3"><tr></td></tr></table> </div>
     <div><table class="table3"><tr></td></tr></table> </div>
     <div><table class="table3"><tr></td></tr></table> </div>
