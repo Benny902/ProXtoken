@@ -7,8 +7,10 @@
 }
 
 body {
-  background-image: url(../media/wp4.gif);
+  background-image: url(../media/personhd3.jpg);
   background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
   color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
