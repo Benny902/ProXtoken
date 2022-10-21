@@ -259,13 +259,16 @@ body {
   left: 1px;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:481px) { /*Desktop*/
     .sidenav {display:none}
     .sidenavbutton {display:none}
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:480px) { /*mobile*/
     .navbar {display:none}
+    .brand-wheel{visibility: hidden;}
+    .hide{visibility: hidden;}
 }
+
 
 
 .main {
@@ -571,5 +574,128 @@ table {
   }
   to{
       transform: rotateY(360deg);
+  }
+}
+
+
+.wrapper {
+  width: 200px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: rgb(85, 55, 82);
+  border: 1px solid rgb(182, 182, 182);
+  padding: 2px;
+  border-radius: 22px;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.514);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+  justify-content: left;
+}
+
+.progress-bar-fill {
+  display: block;
+  height: 6px;
+  background-color: #b700ff;
+  border-radius: 22px;
+  transition: width 500ms ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  border-bottom: 1px solid black;
+}
+
+.brand-wheel {
+  justify-content: left;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 60px;
+  --animationspeed: 45s;
+  --animationdelay: calc(var(--animationspeed) / 2);
+  border-radius: 55px;
+}
+
+.brand-wheel::before {
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 60px;
+  width: 5%;
+  z-index: 2;
+  pointer-events: none;
+}
+.brand-wheel::after {
+  position: absolute;
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 60px;
+  width: 5%;
+  z-index: 2;
+  pointer-events: none;
+  right: 0;
+}
+
+.brand-slide {
+  flex-shrink: 0;
+  position: absolute;
+  animation-name: slidelogo;
+  animation-duration: var(--animationspeed);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.brand-slide.delay {
+  transform: translateX(100%);
+  animation-name: slidelogo2;
+}
+
+.brand-wheel:hover .brand-slide {
+  animation-play-state: paused;
+}
+
+.logo-div {
+  display: inline-flex;
+  align-self: center;
+  animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+
+}
+
+@keyframes slidelogo {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slidelogo2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }
