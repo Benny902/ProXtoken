@@ -265,8 +265,6 @@ body {
 }
 @media screen and (max-width:480px) { /*mobile*/
     .navbar {display:none}
-    .brand-wheel{visibility: hidden;}
-    .hide{visibility: hidden;}
 }
 
 
@@ -374,6 +372,10 @@ mark {
 div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.div2 {
   justify-content: center;
   align-items: center;
 }
@@ -601,41 +603,34 @@ table {
   transition: width 500ms ease-in-out;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
+/*Logo sliderBar*/
 .container {
   border-bottom: 1px solid black;
 }
 
 .brand-wheel {
-  justify-content: left;
   flex-direction: row;
   align-items: center;
   display: flex;
   overflow: hidden;
   position: relative;
-  height: 60px;
+  height: 80px;
+
   --animationspeed: 45s;
   --animationdelay: calc(var(--animationspeed) / 2);
-  border-radius: 55px;
+  border-radius: 50px;
 }
 
 .brand-wheel::before {
   position: absolute;
   background-image: linear-gradient(
     to right,
-    rgb(0, 0, 0) 0%,
+    black,
     rgba(255, 255, 255, 0) 100%
   );
   content: "";
-  height: 60px;
+  height: 100%;
   width: 5%;
   z-index: 2;
   pointer-events: none;
@@ -644,11 +639,11 @@ table {
   position: absolute;
   background-image: linear-gradient(
     to left,
-    rgb(0, 0, 0) 0%,
+    black,
     rgba(255, 255, 255, 0) 100%
   );
   content: "";
-  height: 60px;
+  height: 100%;
   width: 5%;
   z-index: 2;
   pointer-events: none;
@@ -680,7 +675,8 @@ table {
   display: inline-flex;
   align-self: center;
   animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-
+  padding: 0 20px 0 20px;
+  height: 70px;
 }
 
 @keyframes slidelogo {
