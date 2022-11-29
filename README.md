@@ -11,4 +11,4 @@ Project X - Crypto Token
 
 Live website: https://proxtoken.com/
 
-Soon to be deployed on our domain
+.
