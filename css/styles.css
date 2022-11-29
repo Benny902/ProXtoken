@@ -15,6 +15,7 @@ body {
   font-size: 14px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-left: 1px;
+  cursor: url(../media/prox50.png), auto;
 }
 
 .paragraph {
