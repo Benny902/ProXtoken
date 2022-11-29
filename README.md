@@ -11,4 +11,4 @@ Project X - Crypto Token
 
 Github pages live: https://benny902.github.io/ProXtoken/
 
-Soon to be deployed on our domain
+Deployed on our domain: https://proxtoken.com/

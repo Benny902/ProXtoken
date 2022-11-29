@@ -16,6 +16,7 @@ body {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-left: 1px;
   overflow-x: hidden;
+  cursor: url(../media/prox50.png), auto;
 }
 
 .paragraph {
