@@ -1,1 +1,3 @@
 AddHandler application/x-httpd-php5 .html .php .htm
+
+
