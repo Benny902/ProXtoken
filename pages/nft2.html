@@ -108,11 +108,128 @@
 <!-- <span style="color:red;">THIS</span> -->
 
 
-    <div class="paragraph" style="padding:50px"></div>
+    <div class="paragraph" style="padding:10px"></div>
     
-    <div><a style ="width: 750px;height: 90px;font-size:45px;text-align:center;text-decoration:none;color:rgb(255, 255, 255);" href="../pages/nft1" class="button"><b>Welcome To The Jungle NFTS Page</b></a></div>
+    
+    <h2 class="blink_me" style="font-size:30px">Not live yet!<br></h2> 
+    <div class="paragraph" style="padding:10px"></div>
+    <div>
+        <h1 style="font-size:22px;text-align: center;color:rgba(255, 0, 0, 0.603);">
+        for minting and claiming rewards enter the mint page:</h1>
+      </div>
+    <div><a style ="height: 90px;font-size:45px;text-align:center;text-decoration:none;color:red;" href="../pages/mint2" class="button"><b>MINT PAGE</b></a></div>
     <div class="paragraph" style="padding:20px"></div>
-    <div><a style ="width: 750px;height: 90px;font-size:45px;text-align:center;text-decoration:none;color:rgb(255, 255, 255);" href="../pages/nft2" class="button"><b>Proof Of Conecept NFTS Page</b></a></div>
+
+ 
+    <div>
+      <h1 style="font-size:22px;text-align: center;color:rgba(255, 0, 0, 0.603);">
+      Sneak Peak Gallery: (the empty square are deliberate will be reavealed slowly)</h1>
+    </div>
+    <div class="paragraph" style="padding:20px"></div>
+
+    <div class="content">
+       <div class="slider-content">
+          <figure class="shadow"><img src="../NFTgallery/soon1.jpg"></figure>
+          <figure class="shadow"><img src="../NFTgallery/soon2.jpg"></figure>
+          <figure class="shadow"><img src="../NFTgallery/soon3.jpg"></figure>
+          <figure class="shadow"><img src="../NFTgallery/soon4.jpg"></figure>
+          <figure class="shadow"><img src="../NFTgallery/soon5.jpg"></figure>
+          <figure class="shadow"><img src="../NFTgallery/soon6.jpg"></figure>
+          <figure class="shadow"><img src="../NFTgallery/soon7.jpg"></figure>
+          <figure class="shadow"><img src="../NFTgallery/soon8.jpg"></figure>
+          <figure class="shadow"><img src="../NFTgallery/soon9.jpg"></figure>
+       </div>
+    </div>
+
+
+
+    <div class="paragraph" style="padding:80px"></div>
+
+
+    <div>
+      <h1 style="font-size:20px;text-align: center;color:rgba(255, 0, 0, 0.603);">
+        Project X - Second NFT collection called: "Proof of Concept".<br>
+      What is Proof of Concept? POC, is a brand-new unique line of NFTs that put you in control of the movies!<br>
+      Part of the proceeds of the POC NFTs will go to the budget of our brand-new Project X movie that YOU get to vote on!</h1>
+    </div>
+
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-02KhZHfRyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    </div>
+    <div>
+      <h1 style="font-size:18px;text-align: center;color:rgba(255, 255, 255, 0.904);">
+        • Starting Dec 21 and then over the next 11 days, Project X will drop a brand-new video showcasing 1 of the unique NFTs based off the Proof-of-Concept character video. Each character is from a specific Proof of Concept short film. <br>
+
+        • On New Year's Day we will drop one trailer for each film over the next 4 days. On Friday January 6th we will release the NFT line and a poll to vote on your favorite movie trailer. The trailer with the most twitter votes and likes on this YT page will be the next movie we make! The fun doesn't stop there...<br>
+        
+        • Over the course of pre-production, we will release new voting polls that will put you in control of poster design, the musical soundtrack, character death scenes and so much more! Plus, a ton of behind-the-scenes videos that you will only find here, exclusively on the ProofofConceptPresents Youtube page!<br>
+        
+        • So like, subscribe and be a part of this unique NFT line that offers over $60k in rewards, prizes, and giveaways and lets you be a part of the movie making process!<br>
+      </h1>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+    <script>
+    
+    
+    
+    const ABI = [
+        {
+            "type"            : "function",
+            "name"            : "totalSupply",
+            "inputs"          : [],
+            "outputs"         : [{"name":"","type":"uint256"}],
+            "stateMutability" : "view",
+            "payable"         : false,
+            "constant"        : true // for backward-compatibility
+        }
+    ];
+    let bnbprice;
+    async function run() {
+        const web3 = new Web3('https://bsc-dataseed4.binance.org');
+        const contract = new web3.eth.Contract(ABI, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c');
+        const tokenID = 1;
+        bnbprice = await contract.methods.price().call();
+        let result = bnbprice;
+        document.getElementById("result").innerHTML = result; // perDay
+    }
+    
+    run();
+    
+    
+    </script>
+<div style="font-size:18px;color: rgba(255, 255, 255, 0.904);"><span id = "result"></span>&nbsp;-&nbsp;<br></div>
+
+
+
+    <div>
+        <h1 style="font-size:20px;text-align: center;color:rgba(255, 0, 0, 0.603);">
+        3,000 NFT's made of our movie characters attributes, with the following Utilities:</h1>
+      </div>
+      <div>
+
+
+
+
+        <h1 style="font-size:18px;text-align: center;color:rgba(255, 255, 255, 0.904);">
+        • Owning an NFT means you are associate producer and get credit.<br>
+        • Chances to be part of the movie by getting a rare.<br>
+        • 11 rare NFT's which their holders will be rewarded with 2,000$ worth of ProX<br>
+        • ProX rewards 10% of minted NFTs, which is manually claimable on the dApp.<br>
+        • ProX rewards 10% of minted NFTs for 1st collection holders, which is manually claimable on the dApp.<br>
+        • Holding 50 or more NFTs: Whalechat access, and 5m xclub drop per 50nfts.<br>
+        • Prizes for top 1-5 holders (After minting is complete).<br>
+        • Milestone Prizes by raffles: <br>
+        500 minted - $500 giveaway (1 ticket per 2 nfts)<br>
+        1000 minted - $1000 giveaway (1 ticket per 2 nfts)<br>
+        1500 minted - $1500 giveaway (1 ticket per 5 nfts)<br>
+        2000 minted - $2000 giveaway (1 ticket per 5 nfts)<br>
+        2500 minted - $2500 giveaway (1 ticket per 10 nfts)<br>
+        3000 minted - $3000 giveaway (1 ticket per 10 nfts)<br>
+        </h1>
+      </div>
 
     <div>
         <p>
