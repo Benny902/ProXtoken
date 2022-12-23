@@ -8,15 +8,10 @@
 </head>
 <body>
 
-
-    <div id="nav"></div>
+    <div class="paragraph" style="padding:30px"></div>
+    <include src="nav.html"></include>
+    hello
 </body>
-<script>
-    fetch('nav.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('nav').innerHTML = html;
-      });
-  </script>
+
 </html>
 
