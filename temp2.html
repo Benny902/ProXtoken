@@ -10,55 +10,21 @@
 
     
 
-    <span class="sidenavbutton" onclick="openNav()">☰</span>
-
-    <div id="mySidenav" class="sidenav">
-        <div id="mobnav"></div>
-    </div>
-    
-  
-    <p>&nbsp;</p>
-  
-  
     <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "200px";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
-
-<div class="paragraph" style="padding:20px"></div>
-    <div id="nav"></div>
-
-    <script>
-        fetch('https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BNB', {
-            headers: {
-                'X-CMC_PRO_API_KEY': 'ed8d6e1b-08b0-4e28-84bd-f9c1b2d66e5a'
+        async function getBNBPrice() {
+            let bnbPrice;
+            const response = await fetch('https://api.coingecko.com/api/v3/simple/token_price/binance-smart-chain?contract_addresses=0xB8c77482e45F1F44dE1745F52C74426C631bDD52&vs_currencies=usd');
+            const data = await response.json();
+            bnbPrice = data['0xB8c77482e45F1F44dE1745F52C74426C631bDD52'].usd;
+            return bnbPrice;
             }
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log(data.data.BNB.quote.USD.price);
+
+            getBNBPrice().then(price => {
+            console.log(price);
             });
     </script>
 
 </body>
-<script>
-    fetch('nav.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('nav').innerHTML = html;
-      });
-  </script>
-  <script>
-    fetch('mobnav.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('mobnav').innerHTML = html;
-      });
-  </script>
+
 </html>
 
