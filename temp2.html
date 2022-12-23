@@ -8,8 +8,7 @@
 </head>
 <body>
 
-
-    <div id="nav"></div>
+    
 
     <span class="sidenavbutton" onclick="openNav()">☰</span>
 
@@ -30,6 +29,22 @@
       document.getElementById("mySidenav").style.width = "0";
     }
     </script>
+
+<div class="paragraph" style="padding:20px"></div>
+    <div id="nav"></div>
+
+    <script>
+        fetch('https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BNB', {
+  headers: {
+    'myapikey': 'ed8d6e1b-08b0-4e28-84bd-f9c1b2d66e5a'
+  }
+})
+  .then(response => response.json())
+  .then(data => {
+    console.log(data.data.BNB.quote.USD.price);
+  });
+    </script>
+
 </body>
 <script>
     fetch('nav.html')
