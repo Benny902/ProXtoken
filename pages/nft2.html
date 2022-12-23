@@ -174,37 +174,7 @@
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
-    <script>
     
-    
-    
-    const ABI = [
-        {
-            "type"            : "function",
-            "name"            : "totalSupply",
-            "inputs"          : [],
-            "outputs"         : [{"name":"","type":"uint256"}],
-            "stateMutability" : "view",
-            "payable"         : false,
-            "constant"        : true // for backward-compatibility
-        }
-    ];
-    let bnbprice;
-    async function run() {
-        const web3 = new Web3('https://bsc-dataseed4.binance.org');
-        const contract = new web3.eth.Contract(ABI, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c');
-        const tokenID = 1;
-        bnbprice = await contract.methods.price().call();
-        let result = bnbprice;
-        document.getElementById("result").innerHTML = result; // perDay
-    }
-    
-    run();
-    
-    
-    </script>
-<div style="font-size:18px;color: rgba(255, 255, 255, 0.904);"><span id = "result"></span>&nbsp;-&nbsp;<br></div>
 
 
 
@@ -212,20 +182,19 @@
         <h1 style="font-size:20px;text-align: center;color:rgba(255, 0, 0, 0.603);">
         3,000 NFT's made of our movie characters attributes, with the following Utilities:</h1>
       </div>
-      <div>
 
-
-
+      
 
         <h1 style="font-size:18px;text-align: center;color:rgba(255, 255, 255, 0.904);">
         • Owning an NFT means you are associate producer and get credit.<br>
         • Chances to be part of the movie by getting a rare.<br>
         • 11 rare NFT's which their holders will be rewarded with 2,000$ worth of ProX<br>
-        • ProX rewards 10% of minted NFTs, which is manually claimable on the dApp.<br>
+        • ProX rewards 10% of minted NFTs for this collection holders, which is manually claimable on the dApp.<br>
         • ProX rewards 10% of minted NFTs for 1st collection holders, which is manually claimable on the dApp.<br>
+        <div id="bnb-price">...</div>
         • Holding 40 or more NFTs: Whalechat access, and 5m xclub drop per 50nfts.<br>
         • Prizes for top 1-5 holders (After minting is complete).<br>
-        • Milestone Prizes by raffles: <br>
+        • Milestone Prizes by raffles: (ProX, with buyback to boost the chart)<br>
         500 minted - $500 giveaway (1 ticket per 2 nfts)<br>
         1000 minted - $1000 giveaway (1 ticket per 2 nfts)<br>
         1500 minted - $1500 giveaway (1 ticket per 5 nfts)<br>
@@ -233,7 +202,7 @@
         2500 minted - $2500 giveaway (1 ticket per 10 nfts)<br>
         3000 minted - $3000 giveaway (1 ticket per 10 nfts)<br>
         </h1>
-      </div>
+      
 
     <div>
         <p>
@@ -277,4 +246,16 @@
 
 
 </body>
+<script>
+  fetch('https://api.binance.com/api/v3/ticker/price?symbol=BNBUSDT')
+    .then(response => response.json())
+    .then(data => {
+      const bnbPrice = data.price;
+      // Update the text content of the div with the BNB price
+      rewards=3000*0.2*0.1*bnbPrice*2;
+      document.getElementById('bnb-price').textContent = `By claiming Those 20% it will buyback prox for you and boostin our chart! with ${rewards}$!!!`;
+      //document.getElementById('bnb-price').textContent = `These both rewards toghter are: ${rewards}$ !!! (refreshing with live bnb)`;
+      //ProX rewards (10% of minted NFTs), which is manually claimable on the dApp.
+    });
+</script>
 </html>
