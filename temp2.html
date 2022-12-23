@@ -35,14 +35,14 @@
 
     <script>
         fetch('https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BNB', {
-  headers: {
-    'myapikey': 'ed8d6e1b-08b0-4e28-84bd-f9c1b2d66e5a'
-  }
-})
-  .then(response => response.json())
-  .then(data => {
-    console.log(data.data.BNB.quote.USD.price);
-  });
+            headers: {
+                'X-CMC_PRO_API_KEY': 'ed8d6e1b-08b0-4e28-84bd-f9c1b2d66e5a'
+            }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.data.BNB.quote.USD.price);
+            });
     </script>
 
 </body>
