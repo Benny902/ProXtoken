@@ -8,11 +8,42 @@
 </head>
 <body>
 
-    <div class="paragraph" style="padding:30px"></div>
-    <include src="nav.html"></include>
-    <include src="mobnav.html"></include>
-    hello
-</body>
 
+    <div id="nav"></div>
+
+    <span class="sidenavbutton" onclick="openNav()">☰</span>
+
+    <div id="mySidenav" class="sidenav">
+        <div id="mobnav"></div>
+    </div>
+    
+  
+    <p>&nbsp;</p>
+  
+  
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "200px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</body>
+<script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('nav').innerHTML = html;
+      });
+  </script>
+  <script>
+    fetch('mobnav.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('mobnav').innerHTML = html;
+      });
+  </script>
 </html>
 
