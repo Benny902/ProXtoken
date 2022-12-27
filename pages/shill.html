@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../media/prox500new.png">
+<title>Project X</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top" style="font-size: 66px;transform:rotateZ(270deg)"><b>›</b></button>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 55 || document.documentElement.scrollTop > 55) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+<span class="sidenavbutton" onclick="openNav()">☰</span>
+
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="navbar-brand" href="../#" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/prox500new.png" alt="icon" style="max-width: 75px; max-height: 75x">&nbsp;&nbsp;&nbsp;</img></a></a>
+  <a class="navbar-brand" href="mailto: contact@proxtoken.com" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/email.png" alt="icon" style="max-width: 40px; max-height: 40x">&nbsp;&nbsp;&nbsp;</img></a></a>
+  <a class="navbar-brand" href="https://t.me/proxtoken" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/telegram.png" alt="icon" style="max-width: 40px; max-height: 40x">&nbsp;&nbsp;&nbsp;</img></a></a>
+  <a class="navbar-brand" href="https://twitter.com/ProXtoken" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/twitter logo.png" alt="icon" style="max-width: 40px; max-height: 40x">&nbsp;&nbsp;&nbsp;</img></a></a>
+  <a class="navbar-brand" href="https://www.youtube.com/channel/UCJnqnm0BlcJOdtFDpt3vgrg" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/youtube.png" alt="icon" style="max-width: 40px; max-height: 40x">&nbsp;&nbsp;&nbsp;</img></a></a>
+  <a class="navbar-brand" href="https://discord.gg/X5FB2bXb7T" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/discord.png" alt="icon" style="max-width: 40px; max-height: 40x">&nbsp;&nbsp;&nbsp;</img></a></a>
+  <a href="../#" onclick="closeNav()"><b>&nbsp;&nbsp;HOME&nbsp;&nbsp;</b></a>
+  <a href="../#BUY" onclick="closeNav()"><b>BUY PROX</b></a>
+  <a href="../#UTILITIES" onclick="closeNav()"><b>UTILITIES</b></a>
+  <a href="../#TOKENOMICS" onclick="closeNav()"><b>TOKENOMICS</b></a>
+  <a href="../#TEAM" onclick="closeNav()"><b>TEAM</b></a>
+  <a href="../#ROADMAP" onclick="closeNav()"><b>ROADMAP</b></a>
+  <a href="../pages/nft" onclick="closeNav()"><b>&nbsp;&nbsp;NFT&nbsp;&nbsp;</b></a>
+  <a href="../pages/dashboard" onclick="closeNav()"><b>DASHBOARD</b></a>
+  <a href="../pages/xclub" onclick="closeNav()"><b>X-CLUB</b></a>
+  <a href="../pages/xproductions" onclick="closeNav()"><b>X-PRODUCTIONS</b></a>
+  <a href="../pages/calculator" onclick="closeNav()"><b>CALCULATOR</b></a>
+  <a href="../pages/whitepaper" onclick="closeNav()"><b>WHITEPAPER</b></a>
+  <a href="../pages/xclubdrops" onclick="closeNav()"><b>X-CLUB&nbsp;DROPS</b></a>
+  <a href="../pages/pastamas" onclick="closeNav()"><b>PAST&nbsp;AMA'S</b></a>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "200px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+  <div class="navbar">
+      <a class="navbar-brand" href="../#"><img src="../media/prox500new.png" alt="icon" style="max-width: 50px; max-height: 50x"></img></a></a>
+      <div class="dropdown2">
+        <a style ="text-decoration:none" href="../#HOME"><button class="dropbtn2"><b>HOME&nbsp;⁝</b></a></button>
+        <div class="dropdown-content2">
+          <a href="../#BUY"><b>BUY PROX</b></a>
+          <a href="../#UTILITIES"><b>UTILITIES</b></a>
+          <a href="../#TOKENOMICS"><b>TOKENOMICS</b></a>
+          <a href="../#TEAM"><b>ROADMAP</b></a>
+          <a href="../#ROADMAP"><b>TEAM</b></a>
+        </div>
+      </div>
+      <a class="blink_me" href="../pages/nft"><b>NFT</b></a>
+      <a href="../pages/dashboard"><b>DASHBOARD</b></a>
+      <a href="../pages/xclub"><b>X-CLUB</b></a>
+      <a href="../pages/xproductions"><b>X-PRODUCTIONS</b></a>
+      <a href="../pages/whitepaper"><b>WHITEPAPER</b></a>
+      <div class="dropdown">
+        <button class="dropbtn"><b>MORE&nbsp;⁝</b></button>
+        <div class="dropdown-content">
+          <a href="../pages/xclubdrops"><b>X-CLUB&nbsp;DROPS</b></a>
+          <a href="../pages/pastamas"><b>PAST&nbsp;AMA'S</b></a>
+          <a href="../pages/calculator"><b>CALCULATOR</b></a>
+
+        </div>
+      </div> 
+
+        <a class="navbar-brand" href="mailto: contact@proxtoken.com"><img src="../media/email.png" alt="img" style="max-width: 25px; max-height: 25x"></img></a>
+        <a class="navbar-brand" href="https://t.me/proxtoken"><img src="../media/telegram.png" alt="img" style="max-width: 25px; max-height: 25x"></img></a>
+        <a class="navbar-brand" href="https://twitter.com/ProXtoken"><img src="../media/twitter logo.png" alt="img" style="max-width: 25px; max-height: 25x"></img></a>
+        <a class="navbar-brand" href="https://www.youtube.com/channel/UCJnqnm0BlcJOdtFDpt3vgrg"><img src="../media/youtube.png" alt="img" style="max-width: 25px; max-height: 25x"></img></a>
+        <a class="navbar-brand" href="https://discord.gg/X5FB2bXb7T"><img src="../media/discord.png" alt="img" style="max-width: 25px; max-height: 25x"></img></a>
+      </div>
+
+
+      <div><table class="table3"><tr></td></tr></table> </div>
+<!-- <span style="color:red;">THIS</span> -->
+<p>&nbsp;</p><p>&nbsp;</p>
+
+<style>
+  html,body{
+    height: 100%;
+  }
+  .dash{
+        margin: auto;
+        max-width: 800px !important;
+        min-width: 215px !important;
+        min-height: 800px !important;
+       
+        width: 100% ;
+        height: 430px;
+        border-radius:2px;
+        text-align:center;
+        display: block; 
+        margin: auto;
+        padding: 2px;
+        padding-right: 7px;
+        border-color:rgba(255, 0, 0, 0);
+        position: relative;
+        zoom: 126%;
+        }
+ 
+</style>
+
+    <h1>Prox Shill Pics - Big thanks to freddy! ❤ </h1>
+        <iframe class="dash"  
+        src="https://drive.google.com/embeddedfolderview?id=1ANdH5n27_LBa-olo_jg6ope5P1XphtIu&resourcekey=0-G7RnuTSb1qRJ55nGXkSofw#grid"  allowFullScreen>
+        </iframe>
+    
+    
+   
+
+    <div>
+        <p>
+            &nbsp;<br>
+            &nbsp;<br>
+            &nbsp;<br>
+            &nbsp;<br>
+        </p>
+        <h3><span style="color:rgba(255, 0, 140, 0.493);">#ETH_REWARDS&nbsp;&nbsp;&nbsp;&nbsp; 
+          #ESCAPE_ROOM_P2E_GAME&nbsp;&nbsp;&nbsp;&nbsp; 
+          #MOVIE_INDUSRTY&nbsp;&nbsp;&nbsp;&nbsp; 
+          #NFT_COLLECTION&nbsp;&nbsp;&nbsp;&nbsp; 
+          #METAVERSE&nbsp;&nbsp;&nbsp;&nbsp; 
+          #STAKING&nbsp;&nbsp;&nbsp;&nbsp; 
+          #COMMUNITY_REWARDS&nbsp;&nbsp;&nbsp;&nbsp; 
+          #STARTUP_PLATFORM&nbsp;&nbsp;&nbsp;&nbsp; </span> <br></p></h5></h3><br>
+      </div>
+    
+    <div>
+      <h4>Contact us: contact@proxtoken.com</h4><br>
+    </div>
+    
+      <div><table class="table4"><tr></td></tr></table> </div>
+      <div><table class="table4"><tr></td></tr></table> </div>
+      <div>
+        <a class="navbar-brand" href="mailto: contact@proxtoken.com"><img src="../media/email.png" alt="img" style="max-width: 50px; max-height: 50px"></img></a>
+        <a class="navbar-brand" href="https://t.me/proxtoken"><img src="../media/telegram.png" alt="img" style="max-width: 50px; max-height: 50px"></img></a>
+        <a class="navbar-brand" href="https://twitter.com/ProXtoken"><img src="../media/twitter logo.png" alt="img" style="max-width: 50px; max-height: 50px"></img></a>
+        <a class="navbar-brand" href="https://www.youtube.com/channel/UCJnqnm0BlcJOdtFDpt3vgrg"><img src="../media/youtube.png" alt="img" style="max-width: 50px; max-height: 50px"></img></a>
+        <a class="navbar-brand" href="https://discord.gg/X5FB2bXb7T"><img src="../media/discord.png" alt="img" style="max-width: 50px; max-height: 50px"></img></a>
+        
+      </div>
+       <div>
+        <h4>Copyright © 2022 ProjectX</h4><br>
+      </div>
+       <div><table class="table4"><tr></td></tr></table> </div>
+       <div>
+          <p>The content shared on this website is for information purpose only and, thus, should not be considered as financial advice.<br>
+             Trading/Investing (Including Cryptocurrencies) is risky and you should never invest more than you can afford to lose.<br>
+              You alone assume the sole responsibility of evaluating the merits and risks associated with the use of any information<br>
+               or other content on the site before making any decisions based on such information or other content. </p>
+    
+              </div>
+
+              
+</body>
+</html>
