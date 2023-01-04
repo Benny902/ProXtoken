@@ -203,8 +203,12 @@
         2000 minted - $2000 giveaway (1 ticket per 5 nfts)<br>
         2500 minted - $2500 giveaway (1 ticket per 10 nfts)<br>
         3000 minted - $3000 giveaway (1 ticket per 10 nfts)<br>
-        </h1>
-      
+        
+        • Total of 50% from mint price will fund the movie<br>
+        • Total of 50% from mint price will go to buybacks for the rewards and prizes,<br> 
+        <div id="bnb-total">...</div>
+      </h1>
+
 
     <div>
         <p>
@@ -255,7 +259,9 @@
       const bnbPrice = data.price;
       // Update the text content of the div with the BNB price
       rewards=3000*0.2*0.1*bnbPrice*2;
+      rewards2=3000*0.2*0.5*bnbPrice;
       document.getElementById('bnb-price').textContent = `By claiming Those 20% it will buyback prox for you and boost our chart with ${rewards}$!!!`;
+      document.getElementById('bnb-total').textContent = `which means total buyback will be equal to 300bnb => ${rewards2}$!!!`;
     });
 </script>
 </html>
