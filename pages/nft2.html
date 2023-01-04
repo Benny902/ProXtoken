@@ -252,16 +252,28 @@
 
 
 </body>
+
 <script>
+
+function refresh()
+{
   fetch('https://api.binance.com/api/v3/ticker/price?symbol=BNBUSDT')
     .then(response => response.json())
     .then(data => {
       const bnbPrice = data.price;
       // Update the text content of the div with the BNB price
-      rewards=3000*0.2*0.1*bnbPrice*2;
-      rewards2=3000*0.2*0.5*bnbPrice;
+      rewards=120*bnbPrice;
+      rewards2=300*bnbPrice;
       document.getElementById('bnb-price').textContent = `By claiming Those 20% it will buyback prox for you and boost our chart with ${rewards}$!!!`;
       document.getElementById('bnb-total').textContent = `which means total buyback will be equal to 300bnb => ${rewards2}$!!!`;
     });
+}
+
+setInterval(function()
+{
+    refresh()
+}, 2000); // 2 sec
+
+refresh()
 </script>
 </html>
