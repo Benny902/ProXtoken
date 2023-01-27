@@ -34,7 +34,7 @@ $(function () {
        bar += '<a class="navbar-brand" href="mailto: contact@proxtoken.com"><img src="media/email.png" alt="img" style="max-width: 25px; max-height: 25x"></img></a>';
        bar += '<a class="navbar-brand" href="https://t.me/proxtoken"><img src="media/telegram.png" alt="img" style="max-width: 25px; max-height: 25x"></img></a>';
        bar += '<a class="navbar-brand" href="https://twitter.com/ProXtoken"><img src="media/twitter logo.png" alt="img" style="max-width: 25px; max-height: 25x"></img></a>';
-       bar += '<a class="navbar-brand" href="https://www.youtube.com/channel/UCJnqnm0BlcJOdtFDpt3vgrg"><img src="media/youtube.png" alt="img" style="max-width: 25px; max-height: 25x"></img></a>';
+       bar += '<a class="navbar-brand" href="https://www.youtube.com/@Proofofconceptpresents"><img src="media/youtube.png" alt="img" style="max-width: 25px; max-height: 25x"></img></a>';
        bar += '<a class="navbar-brand" href="https://discord.gg/X5FB2bXb7T"><img src="media/discord.png" alt="img" style="max-width: 25px; max-height: 25x"></img></a>';
        bar += '</div>';
 
