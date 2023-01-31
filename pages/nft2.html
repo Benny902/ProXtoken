@@ -179,26 +179,24 @@
         <h1 style="font-size:18px;text-align: center;color:rgba(255, 255, 255, 0.904);">
         • Owning an NFT means you are associate producer and get credit.<br>
         • Chances to be part of the movie by getting a rare.<br>
-        • 11 rare NFT's which their holders will be rewarded with 2,000$ worth of ProX<br>
+        • 11 rare NFT's which their holders will be rewarded with 1,000$ worth of ProX<br>
         • ProX rewards 10% of minted NFTs for this collection holders, which is manually claimable on the dApp.<br>
-        • ProX rewards 10% of minted NFTs for 1st collection holders, which is manually claimable on the dApp.<br>
-        By claiming Those 20% it will buyback prox for you and boost our chart with 120bnb =>
+        • ProX rewards 7% of minted NFTs for 1st collection holders, which is manually claimable on the dApp.<br>
+        Those claims will buyback prox for you and boost our chart with 60bnb =>
         <div id="bnb-price">...</div><br>
-        • Holding 40 or more NFTs: Whalechat access, and 5m xclub credit precentage per 40nfts.<br>
-        • Holding 50 or more NFTs: Picture/name in the movie (if you wish so).<br>
-        • Holding 75 or more NFTs: On-Screen appearance in the movie (if you wish so).<br>
+        • Holding 80 or more NFTs: Whalechat access, and 5m xclub credit precentage per 80nfts.<br>
+        • Holding 100 or more NFTs: Picture/name in the movie (if you wish so).<br>
+        • Holding 150 or more NFTs: On-Screen appearance in the movie (if you wish so).<br>
         • Prizes for top 1-5 holders (After minting is complete).<br>
         • Milestone Prizes by raffles: (ProX, with buyback to boost the chart)<br>
-        500 minted - $500 giveaway (1 ticket per 2 nfts)<br>
-        1000 minted - $1000 giveaway (1 ticket per 2 nfts)<br>
-        1500 minted - $1500 giveaway (1 ticket per 5 nfts)<br>
-        2000 minted - $2000 giveaway (1 ticket per 5 nfts)<br>
-        2500 minted - $2500 giveaway (1 ticket per 10 nfts)<br>
-        3000 minted - $3000 giveaway (1 ticket per 10 nfts)<br>
-        
+        1000 minted - $1500 giveaway - two winners: 1000$ & 500$ (1 ticket per 3 nfts)<br>
+        2000 minted - $2000 giveaway - two winners: 1250$ & 750$ (1 ticket per 7 nfts)<br>
+        3000 minted - $3000 giveaway - two winners: 2000$ & 1000$ (1 ticket per 15 nfts)<br>
+        *** The Tickets you accumulate are entries for all the raffles! 😁 ***<br>
         • Total of 50% from mint price will fund the movie<br>
-        • Total of 50% from mint price will go to buybacks for the rewards and prizes,<br> 
-        which means total buyback will be equal to 300bnb =>
+        • Total of 47% from mint price will go to buybacks for the rewards and prizes,<br> 
+        • Total of 3% from mint price will go to buybacks for the rewards and prizes,<br> 
+        which means total buyback will be equal to 150bnb =>
         <div id="bnb-total">...</div><br> 
       </h1>
 
@@ -255,8 +253,8 @@ function refresh()
     .then(data => {
       const bnbPrice = data.price;
       // Update the text content of the div with the BNB price
-      rewards=120*bnbPrice;
-      rewards2=300*bnbPrice;
+      rewards=60*bnbPrice;
+      rewards2=150*bnbPrice;
       document.getElementById('bnb-price').textContent = ` ${rewards}$!!!`;
       document.getElementById('bnb-total').textContent = ` ${rewards2}$!!!`;
     });
