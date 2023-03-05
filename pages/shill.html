@@ -36,13 +36,15 @@
   }
   </script>
 
-<span class="sidenavbutton" onclick="openNav()">☰</span>
+<div class="navbar2">   
+       <a class="navbar-brand" href="#HOME"><img src="../media/prox500new.png" alt="icon" style="max-width: 50px; max-height: 50x;"></img></a>
+       <span class="sidenavbutton" onclick="openNav()">☰</span>
+      </div>
 
-  <div id="mySidenav" class="sidenav">
-   <ul> <a class="closebtn" onclick="closeNav()">&times;</a>
-    <div><a class="navbar-brand" href="../#" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/prox500new.png" alt="icon" style="max-width: 75px; max-height: 75x">&nbsp;&nbsp;&nbsp;</img></a></a></div>
-    <div><div class="paragraph" style="padding:10px"></div>
-    <a class="navbar-brand" href="mailto: contact@proxtoken.com" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/email.png" alt="icon" style="max-width: 25px; max-height: 25px">&nbsp;</img></a></a>
+<div id="mySidenav" class="sidenav">
+   <ul>
+    <div class="paragraph" style="padding:10px"></div>
+    <div><a class="navbar-brand" href="mailto: contact@proxtoken.com" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/email.png" alt="icon" style="max-width: 25px; max-height: 25px">&nbsp;</img></a></a>
     <a class="navbar-brand" href="https://t.me/proxtoken" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/telegram.png" alt="icon" style="max-width: 25px; max-height: 25px">&nbsp;</img></a></a>
     <a class="navbar-brand" href="https://twitter.com/ProXtoken" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/twitter logo.png" alt="icon" style="max-width: 25px; max-height: 25px">&nbsp;</img></a></a>
     <a class="navbar-brand" href="https://www.youtube.com/@Proofofconceptpresents" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="../media/youtube.png" alt="icon" style="max-width: 25px; max-height: 25px">&nbsp;</img></a></a>
@@ -66,9 +68,16 @@
 
 
 <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "80%";
-}
+  function openNav() {
+    var togglenav = document.getElementById('mySidenav').clientWidth;
+    console.log(togglenav);
+    if (togglenav === 0){
+        document.getElementById("mySidenav").style.width = "70%";
+    }
+    else{
+        document.getElementById("mySidenav").style.width = "0";
+    }
+  }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";

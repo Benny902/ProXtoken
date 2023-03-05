@@ -67,11 +67,17 @@ function topFunction() {
 
 <body  style="padding-left: 42px;">
 
-  <span class="sidenavbutton" onclick="openNav()">☰</span>
+    
+    <div class="navbar2">   
+       <a class="navbar-brand" href="#HOME"><img src="media/prox500new.png" alt="icon" style="max-width: 50px; max-height: 50x;"></img></a>
+       <span class="sidenavbutton" onclick="openNav()">☰</span>
+      </div>
+   
+
+ 
 
   <div id="mySidenav" class="sidenav">
-    <ul><a  class="closebtn" onclick="closeNav()">&times;</a>
-      <div><a class="navbar-brand" href="#HOME" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="media/prox500new.png" alt="icon" style="max-width: 75px; max-height: 75x">&nbsp;&nbsp;&nbsp;</img></a></a></div>
+    <ul>
       <div class="paragraph" style="padding:10px"></div>
       <div><a class="navbar-brand" href="mailto: contact@proxtoken.com" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="media/email.png" alt="icon" style="max-width: 25px; max-height: 25px">&nbsp;</img></a></a>
     <a class="navbar-brand" href="https://t.me/proxtoken" onclick="closeNav()">&nbsp;&nbsp;&nbsp;<img src="media/telegram.png" alt="icon" style="max-width: 25px; max-height: 25px">&nbsp;</img></a></a>
@@ -101,7 +107,14 @@ function topFunction() {
 
   <script>
   function openNav() {
-    document.getElementById("mySidenav").style.width = "80%";
+    var togglenav = document.getElementById('mySidenav').clientWidth;
+    console.log(togglenav);
+    if (togglenav === 0){
+        document.getElementById("mySidenav").style.width = "70%";
+    }
+    else{
+        document.getElementById("mySidenav").style.width = "0";
+    }
   }
   
   function closeNav() {
@@ -150,6 +163,9 @@ width: 100%;
       </div>
     </div>
 </section>
+
+
+
 
 
 <div class="paragraph" style="padding:40px"></div>
