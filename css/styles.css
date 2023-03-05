@@ -35,13 +35,20 @@ body {
 
 .navbar {
   overflow: visible;
-  /*position: fixed;*/
-  top: 0;
-  width: 100%;
+  position: fixed;
+  top: 4px;
+  width: 90%;
   /*background-color: rgba(61, 0, 0, 0.904);*/
   background-color: rgba(61, 0, 0, 0);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font: 1rem Nosifer;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  z-index: 9999;
 }
 
 .navbar a {
@@ -106,6 +113,13 @@ body {
   text-decoration: none;
   color: #f2f2f2;
   font-size: 25px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  z-index: 9999;
 }
 
 /* Links inside the dropdown */
@@ -124,13 +138,14 @@ body {
   color: #f2f2f2;
   font-size: 25px;
   font: 1rem Nosifer;
+  padding:10px;
 }
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background: rgba(255, 0, 0, 0);
   color: rgb(255, 0, 0);
-  border-radius: 100%;
+  border-radius: 20px;
 }
 
 /* Show the dropdown menu on hover */
@@ -186,6 +201,14 @@ body {
   text-decoration: none;
   color: #f2f2f2;
   font-size: 25px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  z-index: 9999;
+  padding:10px;
 }
 
 /* Links inside the dropdown */
@@ -204,13 +227,14 @@ body {
   color: #f2f2f2;
   font-size: 25px;
   font: 1rem Nosifer;
+  padding:10px
 }
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content2 a:hover {
   background: rgba(255, 0, 0, 0);
   color: rgb(255, 0, 0);
-  border-radius: 100%;
+  border-radius: 20px;
 }
 
 /* Show the dropdown menu on hover */
@@ -224,10 +248,10 @@ body {
   height: 95%;
   width: 0;
   position: fixed;
-  z-index: 1;
-  top: 0;
+  z-index: 999;
+  top: 20px;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: all 0.5s left;
   padding-top: 40px;
   padding-bottom: 20px;
   font: 1rem Nosifer;
@@ -236,11 +260,14 @@ body {
 
 .sidenav a {
   color: #f2f2f2;
-  padding: 2px 30px;
+  padding:1px;
+  padding-left: 1px;
   text-decoration: none;
   font-size: 22px;
-  display: block;
-  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  transition: 0.5s;
+  font-size:14px;
 }
 
 .sidenav a:hover {
@@ -251,9 +278,9 @@ body {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
+  top: -24px;
+  left: -45px;
+  font-size: 120px;
   margin-left: 50px;
 }
 
@@ -268,11 +295,11 @@ body {
   left: 1px;
 }
 
-@media screen and (min-width:481px) { /*Desktop*/
+@media screen and (min-width:671px) { /*Desktop*/
     .sidenav {display:none}
     .sidenavbutton {display:none}
 }
-@media screen and (max-width:480px) { /*mobile*/
+@media screen and (max-width:670px) { /*mobile*/
     .navbar {display:none}
 }
 
