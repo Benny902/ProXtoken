@@ -267,7 +267,7 @@ body {
   display: flex;
   flex-direction: row;
   transition: 0.5s;
-  font-size:14px;
+  font-size:22px;
 }
 
 .sidenav a:hover {
