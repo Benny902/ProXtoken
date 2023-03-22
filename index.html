@@ -10,6 +10,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/divtoggle4buy.js"></script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -171,13 +172,20 @@ width: 100%;
 
 
 <div class="paragraph" style="padding:40px"></div>
-
+<h2 class="blink_me" style="font-size:30px"> POC NFT collection is live! → <a style ="padding:10px;height: 41px;font-size:25px;text-align:center;text-decoration:none;color:red;" href="pages/nft2" class="button2"><b>MINT POC</b></a> <br></h2> 
 <a id="HOME"></a>
+<div class="paragraph" style="padding:20px"></div>
+<div><a class="button2" style="width:320px;text-align:center" href="javascript:;" onmousedown="toggleDiv2('mydiv');">↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toggle ProX & X-Burn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓</a></div>
+<iframe  id="mydivoff" style="display:none;border:none;border-radius: 20px;" src="https://xburn.proxtoken.com/" height=1000px width=100% title="X-Burn" target="_parent" ></iframe>
+
+<!-- <div style="font-size: 16px;font-weight: bold;cursor: pointer;" id="clickme">X-BURN coming soon ←(Click for toggle)</div>
+   <iframe id="slide" src="pages/xburn.html" height=2px width=100% title="X-Burn"></iframe> 
+-->
+
 <!-- <span style="color:red;">THIS</span> -->
 <div class="paragraph" style="padding:5px"></div>
-<section data-aos="zoom-in">
-<h2 class="blink_me" style="font-size:30px">↓ POC NFT collection is live! ↓  <br></h2> 
-<div><a style ="height: 100px;font-size:55px;text-align:center;text-decoration:none;color:red;" href="pages/nft2" class="button"><b>MINT POC</b></a></div>
+<section id="mydivon" style="display:block"  data-aos="zoom-in">
+
 
 
   
@@ -282,13 +290,13 @@ width: 100%;">
 
 
 
-<section style="background-image: url(media/moon.jpg);    background-attachment: fixed;
+<div style="background-image: url(media/moon.jpg);    background-attachment: fixed;
 background-size:cover;background-position: center;
 height: 100%;
 width: 100%;">
-
+</div>
 <div  class="paragraph" style="padding:30px;"></div>
-
+<section>
 <div  class="paragraph" style="padding:20px;"></div>
   <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
   <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,binancecoin,projectx-d78dc2ae-9c8a-45ed-bd6a-22291d9d0812" currency="usd" background-color="#380000" locale="en" font-color="#ffffff"></coingecko-coin-price-marquee-widget>
@@ -312,34 +320,50 @@ width: 100%;">
     &nbsp;&nbsp;&nbsp;
   </div>
 </div>
+</section>
 
-
+<section>
 <a id="BUY"></a>
+
   <h1 data-aos="zoom-in-up" style="word-wrap: break-word;font-size: 28px;"><a> Contract Address:  <mark>0x9d9fA9DbAe391C3FB6866F43De62FF3B393133b2</mark></a></h1>
-  <h3> PancakeSwap</h3>
-<div >
+  <div  class="paragraph" style="padding:20px;"></div>
+  <div><a class="button2" style="width:320px;text-align:center" href="javascript:;" onmousedown="toggleDiv('mydiv');">Click to Toggle between 4 buy options:</a></div>
+    <div id="mydiv4" style="display:none"><h3>+ 4: (want your dex here? DM BenjaminKart!)</h3></div>
   
-  <iframe style="border-radius:25px" scrolling="no" src="https://pancakeswap.finance/swap?outputCurrency=0x9d9fA9DbAe391C3FB6866F43De62FF3B393133b2" frameborder="0" width="400" height="800"></iframe>
-</div>
-<div  class="paragraph" style="padding:60px;"></div>
-
-
-<div>
-  <img src="media/VOLTICHANGE.png" alt="volti" width="300">
-  <div  class="paragraph" style="padding:10px;"></div>
-  <h3> Swap - 0.25% Burned on Transactions!</h3>
-</div>
-
-<div>
-
-  <link rel="stylesheet" href="https://voltichange.net/css/widget.css" />
-
-  <iframe 
-  src="https://voltichange.net/api/widget/?chain=56&darktheme=true&tokenin=Native&tokenout=0x9d9fa9dbae391c3fb6866f43de62ff3b393133b2&slippage=0.5"
-  frameborder="0"
-  class="voltichange-widget"></iframe>
-                
-</div>
+    <div id="mydiv1" style="display:block"> 
+      <h3> PancakeSwap</h3>
+    <div >
+      
+      <iframe style="border-radius:25px" scrolling="no" src="https://pancakeswap.finance/swap?outputCurrency=0x9d9fA9DbAe391C3FB6866F43De62FF3B393133b2" frameborder="0" width="400" height="800"></iframe>
+    </div> 
+    </div>
+    
+    <div id="mydiv2" style="display:none">
+      <div>
+        <img src="media/VOLTICHANGE.png" alt="volti" width="300">
+        <div  class="paragraph" style="padding:10px;"></div>
+        <h3> Swap - 0.25% Burned on Transactions!</h3>
+      </div>
+    
+      <div>
+        <link rel="stylesheet" href="https://voltichange.net/css/widget.css" />
+        <iframe 
+        src="https://voltichange.net/api/widget/?chain=56&darktheme=true&tokenin=Native&tokenout=0x9d9fa9dbae391c3fb6866f43de62ff3b393133b2&slippage=0.5"
+        frameborder="0"
+        class="voltichange-widget"></iframe>             
+      </div>
+    </div>
+    
+    <div id="mydiv3" style="display:none">
+      <div>
+        <h3> Flooz.Trade - with fiat</h3>
+      </div>
+      <div>
+        <iframe width="400" height="690" frameborder="0" allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *" src="https://flooz.trade/embed/trade?swapDisabled=false&swapToTokenAddress=0x9d9fA9DbAe391C3FB6866F43De62FF3B393133b2&swapLockToToken=false&onRampDisabled=false&onRampAsDefault=false&onRampDefaultAmount=200&network=bsc&lightMode=false&primaryColor=%235e38f4&roundedCorners=10&padding=20" ></iframe>
+    </div>
+    </div>
+    
+  
 <div  class="paragraph" style="padding:40px;"></div>
 </section>
 
@@ -1072,6 +1096,15 @@ width: 100%;">
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+  document.getElementById( 'clickme' ).addEventListener( 'click', function() {
+
+( slide.style.height == '2px' || slide.style.height == '' )
+   ? slide.style.height = '1000px' 
+   : slide.style.height = '2px';
+
+}, false );
 </script>
 </body>
 </html>
