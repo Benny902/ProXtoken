@@ -394,6 +394,8 @@ body {
 
 .circular--square { 
   border-radius: 40%; 
+  width:216px;
+  height: 216px;
 }
 
 br {
