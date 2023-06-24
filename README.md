@@ -10,6 +10,6 @@ Project X - Crypto Token
 
 Github pages live: https://benny902.github.io/ProXtoken/
 
-Deployed to our domain website: https://proxtoken.com/
+
 
 
